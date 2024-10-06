@@ -1,0 +1,24 @@
+
+.dust-paarticle
+{
+  position: absolute;
+    width: 80%;
+}
+
+#dust-paarticle path
+{
+  transform-box: fill-box;
+    transform-origin: center;
+}
+
+#network-status {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0a0a0a;
+  text-align: center;
+  color: #c4c4c4;
+  width: 100%;
+  font-family:'Roboto';
+}
+

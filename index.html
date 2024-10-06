@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <script>
+        window.onload = function() {
+            window.location.href = 'public/index.html';
+        };
+    </script>
+</head>
+<body>
+    <div id="network-status"></div>
+    <a href="./iLearn.ng/index.html"><button>Start Quiz</button></a>
+    
+
+    <script>
+        function updateNetworkStatus() {
+            const connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            const statusDiv = document.getElementById('network-status');
+        
+            if (connection) {
+                statusDiv.innerHTML = 'Effective connection type: ' + connection.effectiveType;
+        
+                connection.addEventListener('change', () => {
+                    statusDiv.innerHTML = 'Network connection type changed to: ' + connection.effectiveType;
+                });
+            } else {
+                statusDiv.innerHTML = 'Network Information API not supported';
+            }
+        }
+        
+        updateNetworkStatus();
+        </script>
+    <script src="./iLearn.ng/app.js"></script>
+</body>
+</html>

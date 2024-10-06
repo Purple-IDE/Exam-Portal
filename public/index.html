@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <!--<style>
+        body {
+            margin: 0;
+            background-color: hsl(0, 0%, 100%);
+            color: hsl(0, 0%, 10%);
+            line-height: 1.5;
+            font-family: "PT Sans", Calibri, Tahoma, sans-serif;
+        }
+
+        .id-container {
+            width: 100%;
+            background-color: hsl(240, 2%, 10%);
+            border-bottom: 4px solid hsl(18, 4%, 48%);
+            color: hsl(0, 0%, 97%);
+            display: grid;
+	        place-items: center;
+            text-align: center;
+        }
+        .active-status {
+            
+        }
+        .card p {
+            width: 100px;
+            border-style: solid;
+            border-color: hsl(0, 0%, 100%);
+            color: hsl(0, 0%, 100%);
+            
+            border-radius: 10px;
+        }
+        p {
+            
+           
+        }
+
+        h2 {
+            text-align: center;
+        }
+    </style>-->
+</head>
+<body>
+    <div class="id-container">
+        <div id="user-details">
+            <h2>User Details</h2>
+            <p id="user-name"></p>
+            <p id="user-gender"></p>
+            <p class="active-status"> Status: Frontend developer
+                
+            </p>
+            <p style="border-style: solid; border-radius:10px;">Active</p>
+            
+        </div>
+    </div>
+    <div id="quiz-container">
+        <h2>Quiz</h2>
+        <div id="question-container">
+            <!-- Question will be inserted here -->
+        </div>
+        
+        <div id="result-container" style="display: none;">
+            <h3>Your Score: <span id="score"></span></h3>
+        </div>
+        <button id="next-button" >Next Question</button>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+</html>
